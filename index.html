@@ -11,6 +11,88 @@
     <!-- Sitemap -->
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
+     <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://gperry.space/#gareth-perry",
+          "name": "Gareth Perry",
+          "honorificPrefix": "Dr.",
+          "jobTitle": "Assistant Professor",
+          "worksFor": {
+            "@type": "EducationalOrganization",
+            "name": "New Jersey Institute of Technology",
+            "alternateName": "NJIT",
+            "url": "https://www.njit.edu"
+          },
+          "affiliation": [
+            {
+              "@type": "Organization",
+              "name": "Department of Physics",
+              "url": "https://physics.njit.edu/"
+            },
+            {
+              "@type": "Organization",
+              "name": "Center for Solar-Terrestrial Research",
+              "url": "https://research.njit.edu/cstr/"
+            }
+          ],
+          "description": "Space physicist studying the Magnetosphere-Ionosphere-Thermosphere (MIT) system, space weather, and ionospheric scintillation at NJIT.",
+          "url": "https://gperry.space",
+          "sameAs": [
+            "https://orcid.org/0000-0002-4690-5783",
+            "https://scholar.google.com/citations?user=PefgEfMAAAAJ&hl=en",
+            "https://www.linkedin.com/in/gareth-perry-3685013a/"
+          ],
+          "alumniOf": [
+            {
+              "@type": "EducationalOrganization",
+              "name": "University of Saskatchewan"
+            },
+            {
+              "@type": "EducationalOrganization",
+              "name": "University of Calgary"
+            }
+          ],
+          "knowsAbout": [
+            "Space Weather",
+            "Ionospheric Physics",
+            "Magnetosphere-Ionosphere-Thermosphere Coupling",
+            "HF Radio Propagation",
+            "GNSS Scintillation",
+            "SuperDARN",
+            "Citizen Science"
+          ]
+        },
+        {
+          "@type": "ResearchOrganization",
+          "@id": "https://gperry.space/#perry-group",
+          "name": "The Perry Group",
+          "description": "Space physics research group at NJIT studying the MIT system, space weather, and citizen science led by Dr. Gareth Perry.",
+          "url": "https://gperry.space",
+          "parentOrganization": {
+            "@type": "EducationalOrganization",
+            "name": "New Jersey Institute of Technology",
+            "url": "https://www.njit.edu"
+          },
+          "founder": {
+            "@id": "https://gperry.space/#gareth-perry"
+          },
+          "knowsAbout": [
+            "Ionospheric Research",
+            "Magnetospheric Physics",
+            "Space Weather",
+            "HamSCI",
+            "Solar Terrestrial Research"
+          ]
+        }
+      ]
+    }
+    </script>
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
