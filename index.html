@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Perry Group | NJIT Solar-Terrestrial Research</title>
+    <meta name="description"
+        content="The Perry Group at NJIT explores plasma structuring and dynamics within Earth's ionosphere and magnetosphere.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="hero-bg-pattern"></div>
+
+    <nav class="navbar glass">
+        <div class="nav-container">
+            <div class="logo" style="display: flex; align-items: center; gap: 1rem;">
+                <a href="https://www.njit.edu/" target="_blank" style="display: flex; align-items: center;">
+                    <img src="njit-logo.png" alt="NJIT Logo" style="height: 36px;">
+                </a>
+                <div style="width: 1px; height: 32px; background: rgba(0,0,0,0.1); margin: 0 0.5rem;"></div>
+                <div style="display: flex; flex-direction: column; justify-content: center; line-height: 1.1;">
+                    <a href="#" class="logo-text"
+                        style="text-decoration: none; font-size: 1.4rem; font-weight: 800; display: block;">
+                        The<span class="gradient-text" style="color: var(--color-primary);">Perry</span>Group
+                    </a>
+                    <div
+                        style="font-size: 0.65rem; color: var(--text-dim); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 2px;">
+                        <a href="https://physics.njit.edu/" target="_blank" class="nav-affiliation"
+                            style="color: inherit; text-decoration: none;">Department of Physics</a>
+                        &bull;
+                        <a href="https://research.njit.edu/cstr/" target="_blank" class="nav-affiliation"
+                            style="color: inherit; text-decoration: none;">Center for Solar-Terrestrial Research</a>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#news" class="nav-link">News</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero fade-in">
+            <div class="cartoon-aurora">
+                <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+                    <path class="aurora-path aurora-path-1"
+                        d="M0,200 Q250,100 500,200 T1000,200 L1000,1000 L0,1000 Z" />
+                    <path class="aurora-path aurora-path-2"
+                        d="M0,300 Q250,200 500,300 T1000,300 L1000,1000 L0,1000 Z" />
+                    <path class="aurora-path aurora-path-3"
+                        d="M0,400 Q250,300 500,400 T1000,400 L1000,1000 L0,1000 Z" />
+                </svg>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Exploring Earth's
+                    <br>
+                    <span class="gradient-text">Geospace Environment</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Investigating plasma structuring and dynamics within the Earth's ionosphere and magnetosphere
+                    through innovative observational techniques.
+                </p>
+                <div class="hero-actions">
+                    <a href="#research" class="btn btn-primary">Discover Our Research</a>
+                    <a href="#team" class="btn btn-secondary glass">Meet the Team</a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <p>Scroll to explore</p>
+                <i class="ph ph-caret-down bounce" aria-hidden="true"></i>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container fade-in">
+                <div class="grid about-grid">
+                    <div class="about-text">
+                        <div class="fade-in">
+                            <h2 class="section-title">About the <span class="gradient-text">Group</span></h2>
+                            <p class="body-text">
+                                The Perry Group explores the Magnetosphere-Ionosphere-Thermosphere (MIT) system,
+                                investigating the plasma dynamics and "space weather" effects that impact critical
+                                communications and sensing infrastructure. Supported by the National Aeronautics and
+                                Space Administration (NASA), the Office of Naval
+                                Research (ONR), the National Science Foundation (NSF), and the Amateur Radio Digital
+                                Communications (ARDC), our team utilizes both
+                                remote sensing and in situ techniques to diagnose geospace environments. We are also
+                                committed to interdisciplinary research and citizen science, leading international
+                                initiatives like the STEVE Community Workshop and collaborating with Ham Radio Science
+                                Citizen Investigation (HamSCI) to advance
+                                our understanding of atmospheric phenomena through community-driven observations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-stats glass card" style="grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <div class="stat-item">
+                            <h3 class="stat-number">2019</h3>
+                            <p class="stat-label">Established at NJIT</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">5</h3>
+                            <p class="stat-label">Active Researchers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">12</h3>
+                            <p class="stat-label">Perry Group Alumni</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">$6M+</h3>
+                            <p class="stat-label">Research Funding</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="section bg-dim">
+            <div class="container">
+                <h2 class="section-title text-center fade-in">Our <span class="gradient-text">Research</span></h2>
+                <div class="grid research-grid">
+
+                    <div class="card glass research-card hover-lift fade-in">
+                        <div class="card-icon" style="background: transparent;">
+                            <img src="https://www.google.com/s2/favicons?domain=nsf.gov&sz=128" alt="NSF Logo"
+                                style="width: 56px; height: 56px; object-fit: contain;">
+                        </div>
+                        <div
+                            style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase;">
+                            NSF (AGS 2517208)</div>
+                        <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4;">Conference: The 2025 HamSCI
+                            Workshop</h3>
+                        <p class="card-text">
+                            Advances scientific understanding by enabling face-to-face communication between
+                            professional space scientists and amateur radio operators, bridging academic research and
+                            citizen science.
+                        </p>
+                    </div>
+
+                    <div class="card glass research-card hover-lift fade-in delay-1">
+                        <div class="card-icon" style="background: transparent; width: auto; max-width: 150px;">
+                            <img src="https://www.ardc.net/wp-content/uploads/ARDC-Logo.jpg" alt="ARDC Logo"
+                                style="max-width: 150px; height: 56px; object-fit: contain; border-radius: 8px;">
+                        </div>
+                        <div
+                            style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase;">
+                            ARDC (1585H)</div>
+                        <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4;">The 2025 HamSCI 2025
+                            Workshop Hosted by NJIT</h3>
+                        <p class="card-text">
+                            Supports diverse participation in the Ham Radio Science Citizen Investigation (HamSCI)
+                            workshop held at the New Jersey Institute of Technology.
+                        </p>
+                    </div>
+
+                    <div class="card glass research-card hover-lift fade-in delay-2">
+                        <div class="card-icon" style="background: transparent; width: auto; max-width: 150px;">
+                            <img src="https://www.onr.navy.mil/themes/custom/onr/logo.png" alt="ONR Logo"
+                                style="max-width: 150px; height: 56px; object-fit: contain;">
+                        </div>
+                        <div
+                            style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase;">
+                            ONR (N00014-23-1-2161)</div>
+                        <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4;">Detecting Polar Cap Patches
+                            in Over-the-Horizon Radar Data</h3>
+                        <p class="card-text">
+                            Advancing the development of a polar cap patch detection algorithm for over-the-horizon
+                            radars (OTHRs).
+                        </p>
+                    </div>
+
+                    <div class="card glass research-card hover-lift fade-in">
+                        <div class="card-icon" style="background: transparent;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA Logo"
+                                style="width: 64px; height: 64px; object-fit: contain;">
+                        </div>
+                        <div
+                            style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase;">
+                            NASA (80NSSC23K1321)</div>
+                        <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4;">An Examination of the
+                            Response of the Ionosphere-Thermosphere System to the 2024 Solar Eclipse</h3>
+                        <p class="card-text">
+                            Coordinates a campaign and deploys new instruments alongside existing infrastructure near
+                            the path of the eclipse to maximize scientific returns from this rare opportunity.
+                        </p>
+                    </div>
+
+                    <div class="card glass research-card hover-lift fade-in delay-1">
+                        <div class="card-icon" style="background: transparent;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA Logo"
+                                style="width: 64px; height: 64px; object-fit: contain;">
+                        </div>
+                        <div
+                            style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase;">
+                            NASA (80NSSC23K1322)</div>
+                        <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4;">Solar Eclipse QSO Party
+                            2.0: Amateur Radio Citizen Science to Study the Ionospheric Effects of the 2024 American
+                            Total Solar Eclipse</h3>
+                        <p class="card-text">
+                            Focuses on the ionospheric response to the 2024 total solar eclipse through large-scale
+                            citizen science experiments known as the HamSCI Festivals of Eclipse Ionospheric Science
+                            (FoEIS).
+                        </p>
+                    </div>
+
+                    <div class="card glass research-card hover-lift fade-in delay-2">
+                        <div class="card-icon" style="background: transparent;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA Logo"
+                                style="width: 64px; height: 64px; object-fit: contain;">
+                        </div>
+                        <div
+                            style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase;">
+                            NASA (80NSSC25K7026)</div>
+                        <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4;">A HamSCI investigation of
+                            the bottomside ionosphere during the 2023 annular and 2024 total solar eclipses</h3>
+                        <p class="card-text">
+                            Leverages the expertise of HamSCI citizen scientists to study the effects of the solar
+                            eclipses on the ionosphere-thermosphere system and develop observational frameworks.
+                        </p>
+                    </div>
+
+                    <div class="card glass research-card hover-lift fade-in">
+                        <div class="card-icon" style="background: transparent;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA Logo"
+                                style="width: 64px; height: 64px; object-fit: contain;">
+                        </div>
+                        <div
+                            style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase;">
+                            NASA (80NSSC21K1318)</div>
+                        <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4;">Characteristics of High
+                            Frequency radio propagation and scintillation in the polar-cap ionosphere</h3>
+                        <p class="card-text">
+                            Advances understanding of ionospheric scintillation in the northern polar-cap ionosphere
+                            through analysis of radio science data from an HF receiver in low Earth orbit.
+                        </p>
+                    </div>
+
+                    <div class="card glass research-card hover-lift fade-in delay-1">
+                        <div class="card-icon" style="background: transparent;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA Logo"
+                                style="width: 64px; height: 64px; object-fit: contain;">
+                        </div>
+                        <div
+                            style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase;">
+                            NASA (80NSSC21K1774)</div>
+                        <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4;">An e-POP investigation of
+                            the ionosphere-thermosphere system's regional response to the December 4, 2021 solar eclipse
+                        </h3>
+                        <p class="card-text">
+                            A month-long measurement campaign using e-POP to deduce the ionosphere-thermosphere system's
+                            regional response to the December 2021 solar eclipse.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="section container">
+            <h2 class="section-title text-center fade-in">Recent <span class="gradient-text">Publications</span></h2>
+
+            <div id="publications-grid">
+                <!-- Skeleton Loaders (Shown during fetch) -->
+                <div class="skeleton-container" id="pub-skeleton">
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="https://scholar.google.com/citations?user=PefgEfMAAAAJ&hl=en" target="_blank"
+                    class="btn btn-secondary glass">View Full Google Scholar Profile</a>
+            </div>
+        </section>
+
+        <section id="news" class="section container">
+            <h2 class="section-title text-center fade-in"><span class="gradient-text">News</span></h2>
+            
+            <details class="year-group mt-12">
+                <summary class="year-summary year-title text-2xl font-bold mb-6 fade-in" style="color: var(--text-main); border-bottom: 2px solid var(--color-primary-light); display: inline-flex; padding-bottom: 0.5rem; width: auto;">
+                    2025 <i class="ph ph-caret-down"></i>
+                </summary>
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 1rem;">
+                    <div class="card glass hover-lift fade-in">
+                        <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase;">July 3, 2025</div>
+                        <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4;">June tends to be the busiest meeting month</h3>
+                        <p class="card-text">Members of the Perry group were spread out across North America for most of June, attending scientific meetings in Virginia, Iowa, and Saskatchewan (Canada). Drs. Perry and Beser attended the <a href="http://vt.superdarn.org/workshop/" target="_blank">SuperDARN Workshop</a> in Roanoke, Virginia. The very next week Dr. Perry attending the <a href="https://cap.ca/congress-conference/2025-cap-congress/" target="_blank">Canadian CAP Congress</a> in Saskatoon, Saskatchewan. And finally, last week Drs. Perry and Pandey participated in the joint <a href="https://cedarscience.org/2025-joint-cedar-gem-workshop" target="_blank">CEDAR-GEM Workshop</a> in Des Moines, Iowa. Perry, Pandey, and Beser several papers highlighting exciting results from the multitude of research activities underway in the group.</p>
+                        <div class="card-img-container mt-4">
+                            <img src="Perry_CAP.jpg" alt="Dr. Perry at the CAP Congress" style="width: 100%; border-radius: 12px; object-fit: cover;">
+                            <p class="text-xs text-dim mt-2" style="font-style: italic; font-size: 0.75rem; line-height: 1.3;">Dr. Perry presenting at paper at the CAP Congress at the University of Saskatchewan in Saskatoon on June 10, 2025. Photo courtesy of Dr. David Themens.</p>
+                        </div>
+                    </div>
+
+                    <div class="card glass hover-lift fade-in delay-1">
+                        <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase;">March 17, 2025</div>
+                        <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4;">NJIT hosts a cutting-edge citizen science research conference</h3>
+                        <p class="card-text">NJIT welcomed over 100 in-person and 75 virtual attendees at the 2025 <a href="https://hamsci.org" target="_blank">HamSCI</a> Workshop, March 14 - 15, 2025. The two-day event featured over 50 talks, poster presentations, and tech demonstrations, as well as countless hours of stimulating discussions on HamSCI research. The meeting was kicked off by NJIT President, Dr. Teik Lim, who gave a rousing speech which set the tone for the remainder of the meeting. HamSCI is a collective of traditional and citizen scientists who use ham radio to study the natural geospace environment. Members of the Perry Group, including Drs. Perry and Pandey, are part of the HamSCI local organizing committee.</p>
+                        <div class="card-img-container mt-4">
+                            <img src="Perry_HamSCI25.png" alt="Dr. Perry at HamSCI 2025" style="width: 100%; border-radius: 12px; object-fit: cover;">
+                            <p class="text-xs text-dim mt-2" style="font-style: italic; font-size: 0.75rem; line-height: 1.3;">Dr. Gareth Perry introducing NJIT Prsident Dr. Teik Lim at the 2025 HamSCI Workshop on March 14, 2025.</p>
+                        </div>
+                    </div>
+
+                    <div class="card glass hover-lift fade-in delay-2">
+                        <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase;">January 6, 2025</div>
+                        <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4;">Members of the Perry group are part of the workshop local organizing committee</h3>
+                        <p class="card-text">NJIT is hosting the 2025 <a href="https://hamsci.org" target="_blank">HamSCI</a> Workshop, which will take place at NJIT on March 14 - 15, 2025. The annual workshop features presentations, demonstrations, and discussions on HamSCI participants' activities over the past year. HamSCI is a collective of traditional and citizen scientists who use ham radio to study the natural geospace environment. Members of the Perry Group, including Drs. Perry and Pandey, are part of the HamSCI local organizing committee. For more details, consult the <a href="https://hamsci.org/hamsci2025" target="_blank">2025 HamSCI Workshop website</a>.</p>
+                    </div>
+
+                    <div class="card glass hover-lift fade-in">
+                        <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase;">January 1, 2025</div>
+                        <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4;">Kaur to advance HPC numerical raytracing work</h3>
+                        <p class="card-text">NJIT Graduate Student (Applied Physics) Navdeep Kaur has joined the Perry Group. They will be leading the effort to expand the Perry Group's existing High Frequency (HF) numerical raytrace propagation modeling efforts into the High Performance Computing (HPC) realm, building on efforts of former Perry Group member Tanmay Kapure.</p>
+                    </div>
+                </div>
+            </details>
+
+            <details class="year-group mt-16">
+                <summary class="year-summary year-title text-2xl font-bold mb-6 fade-in" style="color: var(--text-main); border-bottom: 2px solid var(--color-primary-light); display: inline-flex; padding-bottom: 0.5rem; width: auto;">
+                    2024 <i class="ph ph-caret-down"></i>
+                </summary>
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 1rem;">
+                    <div class="card glass hover-lift fade-in">
+                        <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase;">October 8, 2024</div>
+                        <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4;">Members of the Perry group will use citizen science data to study eclipse effects</h3>
+                        <p class="card-text">Prof. Perry has been awarded a NASA grant (80NSSC25K7026) to study the effects of the October 2023 and April 2024 solar eclipses and their effects on the terrestrial ionosphere-thermosphere system. The project titled "A <a href="https://hamsci.org" target="_blank">HamSCI</a> investigation of the bottomside ionosphere during the 2023 annular and 2024 total solar eclipses" will analyze data collected by HamSCI participants and develop HamSCI's ability to investigate transient heliophysical and geophysical events, such as coronal mass ejections and geomagnetic storms.</p>
+                    </div>
+
+                    <div class="card glass hover-lift fade-in delay-1">
+                        <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase;">August 26, 2024</div>
+                        <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4;">Kapure to strengthen numerical raytracing ability of Perry Group</h3>
+                        <p class="card-text">NJIT Graduate Student (MS in Data Science) Tanmay Kapure joined the Perry Group near the end of the summer. He will be leading the effort to expand the Perry Group's existing High Frequency (HF) numerical raytrace propagation modeling efforts into the High Performance Computing (HPC) realm.</p>
+                    </div>
+
+                    <div class="card glass hover-lift fade-in delay-2">
+                        <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase;">August 2, 2024</div>
+                        <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4;">Perry Group eclipses previous years' abstract submissions</h3>
+                        <p class="card-text">Members of the Perry Group have submitted eight abstracts (as first author) for to the upcoming <a href="https://www.agu.org/annual-meeting" target="_blank">AGU (American Geophysical Union) Annual Meeting</a>, which will be held in Washington, D.C. this December. When taking into account abstracts where Perry Group members are contributing authors, the number of abstracts submitted increases to 17—another record for the group! Additionally, Prof. Perry will be serve as a convener for three meeting sessions: <a href="https://agu.confex.com/agu/agu24/prelim.cgi/Session/228406" target="_blank">SM004</a>, <a href="https://agu.confex.com/agu/agu24/prelim.cgi/Session/229486" target="_blank">SA016</a>, <a href="https://agu.confex.com/agu/agu24/prelim.cgi/Session/225676" target="_blank">SA020</a>.</p>
+                    </div>
+
+                    <div class="card glass hover-lift fade-in">
+                        <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase;">July 9, 2024</div>
+                        <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4;">Perry joins CEDAR Science Steering Committee</h3>
+                        <p class="card-text">Prof. Perry was appointed to a three year term on the <a href="https://cedarscience.org" target="_blank">CEDAR</a> (Coupling, Energetics, and Dynamics of Atmospheric Regions) <a href="https://cedarscience.org/science-steering-committee" target="_blank">Science Steering Committee</a>. One of Perry's roles on the committee will be to serve as a liason beween the CSSC and the <a href="https://gem.epss.ucla.edu/mediawiki/index.php/Organization_and_People" target="_blank">GEM Steering Committee</a>. The CSSC "is responsible for periodic checks on the community science progress and direction, in coordination with the CEDAR community".</p>
+                    </div>
+
+                    <div class="card glass hover-lift fade-in delay-1">
+                        <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase;">June 25, 2024</div>
+                        <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4;">Perry Group presenting research results</h3>
+                        <p class="card-text">The summer conference/workshop season has been busy for member of the Perry Group. On June 8-9, 2024, Drs. Beser, Pandey, and Perry were co-conveners in the ISR Community and Research Workshop at the Wyndham Hotel in San Diego. Those three along with Sabastian Fernandes attended the <a href="https://cedarscience.org/2024-workshop" target="_blank">2024 CEDAR Workshop</a> at the same location later that week (June 10 - 14, 2024). This week (June 24 - 28, 2024) Dr. Perry will be attending the <a href="https://gemworkshop.org" target="_blank">2024 GEM Workshop</a> in Colorado to convene sessions for the GEM <a href="https://gem.epss.ucla.edu/mediawiki/index.php/FG:_Mesoscale_drivers_of_the_nightside_transition_region_ionospheric_and_magnetotail_evaluations" target="_blank">Mesoscale drivers of the nightside transition region ionospheric and magnetotail evaluations" Focus Group</a>, and will present Perry Group member Harshit Panwar's research results.</p>
+                        <div class="card-img-container mt-4">
+                            <img src="Fernandes_CEDAR24.jpg" alt="Sabastian Fernandes at CEDAR 2024" style="width: 100%; border-radius: 12px; object-fit: cover;">
+                            <p class="text-xs text-dim mt-2" style="font-style: italic; font-size: 0.75rem; line-height: 1.3;">Perry Group member Sabastian Fernandes presenting his poster at the 2024 CEDAR Workshop</p>
+                        </div>
+                    </div>
+
+                    <div class="card glass hover-lift fade-in">
+                        <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase;">June 5, 2024</div>
+                        <h3 class="card-title" style="font-size: 1.15rem; line-height: 1.4;">New Perry Group Website Launched</h3>
+                        <p class="card-text">The new Perry Group Website is now launched and will serve as a hub of information for all activities related to the group.</p>
+                    </div>
+                </div>
+            </details>
+        </section>
+
+        <section id="team" class="section">
+            <div class="container">
+                <h2 class="section-title text-center fade-in">The <span class="gradient-text">Team</span></h2>
+
+                <div class="team-leader fade-in">
+                    <div class="glass card profile-card leader-card hover-glow">
+                        <div class="profile-info">
+                            <div class="profile-img-container">
+                                <img src="Gareth Perry.png" alt="Dr. Gareth Perry" class="profile-img">
+                            </div>
+                            <h3 class="profile-name">
+                                <a href="http://gperry.space" target="_blank"
+                                    style="text-decoration: none; color: inherit;">Dr. Gareth Perry</a>
+                            </h3>
+                            <p class="profile-role font-medium" style="color: var(--color-primary);">Group Lead</p>
+                            <p class="profile-bio text-sm text-dim mt-2">
+                                Assistant Professor, NJIT. PhD from Univ. of Saskatchewan (2015). Former Postdoc at
+                                Univ. of Calgary.
+                            </p>
+                            <div class="profile-links"
+                                style="display: flex; gap: 15px; justify-content: center; margin-top: 15px;">
+                                <a href="https://www.linkedin.com/in/gareth-perry-3685013a/" target="_blank"
+                                    title="LinkedIn" aria-label="LinkedIn Profile"
+                                    style="color: var(--text-dim); font-size: 1.5rem; transition: color var(--transition-fast);"
+                                    onmouseover="this.style.color='var(--color-primary)'"
+                                    onmouseout="this.style.color='var(--text-dim)'"><i class="ph ph-linkedin-logo"
+                                        aria-hidden="true"></i></a>
+                                <a href="https://scholar.google.com/citations?user=PefgEfMAAAAJ&hl=en" target="_blank"
+                                    title="Google Scholar" aria-label="Google Scholar Profile"
+                                    style="color: var(--text-dim); font-size: 1.5rem; transition: color var(--transition-fast);"
+                                    onmouseover="this.style.color='var(--color-primary)'"
+                                    onmouseout="this.style.color='var(--text-dim)'"><i class="ph ph-graduation-cap"
+                                        aria-hidden="true"></i></a>
+                                <a href="https://orcid.org/0000-0002-4690-5783" target="_blank"
+                                    title="ORCID" aria-label="ORCID Profile"
+                                    style="color: var(--text-dim); font-size: 1.5rem; transition: color var(--transition-fast);"
+                                    onmouseover="this.style.color='var(--color-primary)'"
+                                    onmouseout="this.style.color='var(--text-dim)'"><i class="ph ph-identification-card"
+                                        aria-hidden="true"></i></a>
+                                <a href="https://drive.google.com/file/d/1ALHh5x8-fC74zyhqEzA-B34oBG7BByp5/view?pli=1"
+                                    target="_blank" title="Curriculum Vitae" aria-label="Curriculum Vitae Document"
+                                    style="color: var(--text-dim); font-size: 1.5rem; transition: color var(--transition-fast);"
+                                    onmouseover="this.style.color='var(--color-primary)'"
+                                    onmouseout="this.style.color='var(--text-dim)'"><i class="ph ph-file-pdf"
+                                        aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <h3 class="text-xl font-medium text-center mb-6 text-light fade-in">Current Members</h3>
+                    <div class="student-grid fade-in delay-1">
+                        <a href="https://www.linkedin.com/in/katarzyna-beser-591171344/" target="_blank"
+                            class="student-chip glass hover-lift text-center">
+                            <span class="member-name">Dr. Katarzyna Beser</span>
+                            <span class="member-role">Postdoctoral Fellow</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dr-kuldeep-pandey/" target="_blank"
+                            class="student-chip glass hover-lift text-center">
+                            <span class="member-name">Dr. Kuldeep Pandey</span>
+                            <span class="member-role">Postdoctoral Fellow</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/navdeep-kaur-308713303/" target="_blank"
+                            class="student-chip glass hover-lift text-center">
+                            <span class="member-name">Navdeep Kaur</span>
+                            <span class="member-role">Research Analyst</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/austin-dalton-204a4a3a7/" target="_blank"
+                            class="student-chip glass hover-lift text-center">
+                            <span class="member-name">Austin Dalton</span>
+                            <span class="member-role">PhD Student</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <h3 class="text-xl font-medium text-center mb-6 text-light fade-in delay-1">Alumni</h3>
+                    <div class="student-grid fade-in delay-2" style="opacity: 0.85;">
+                        <a href="https://www.linkedin.com/in/lindsay-v-goodwin/" target="_blank"
+                            class="student-chip glass hover-lift">
+                            <span class="member-name">Prof. Lindsay Goodwin</span>
+                            <span class="member-role">NASA Jack Eddy Fellow</span>
+                        </a>
+                        <a href="https://www.linkedin.com/search/results/people/?keywords=Binjie+Liu+NJIT"
+                            target="_blank" class="student-chip glass hover-lift">
+                            <span class="member-name">Binjie Liu</span>
+                            <span class="member-role">PhD Candidate</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sabastian-fernandes-bb46781ba/" target="_blank"
+                            class="student-chip glass hover-lift">
+                            <span class="member-name">Sabastian Fernandes</span>
+                            <span class="member-role">Research Analyst</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hpanwar/" target="_blank"
+                            class="student-chip glass hover-lift">
+                            <span class="member-name">Harshit Panwar</span>
+                            <span class="member-role">Undergraduate Researcher</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tanmay-kapure/" target="_blank"
+                            class="student-chip glass hover-lift">
+                            <span class="member-name">Tanmay Kapure</span>
+                            <span class="member-role">Graduate Researcher</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/subodh-dahal-61201399/" target="_blank"
+                            class="student-chip glass hover-lift">
+                            <span class="member-name">Subodh Dahal</span>
+                            <span class="member-role">MSc Student</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sara-lyman-131a56261/" target="_blank"
+                            class="student-chip glass hover-lift">
+                            <span class="member-name">Sara Lyman</span>
+                            <span class="member-role">NSF REU Student</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tiago-trigo-994255266/" target="_blank"
+                            class="student-chip glass hover-lift">
+                            <span class="member-name">Tiago Trigo</span>
+                            <span class="member-role">Undergraduate Researcher</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/andrew-gyakobo/" target="_blank"
+                            class="student-chip glass hover-lift">
+                            <span class="member-name">Andrew Gyakobo</span>
+                            <span class="member-role">Undergraduate Researcher</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/diego-sanchez-07b995236/" target="_blank"
+                            class="student-chip glass hover-lift">
+                            <span class="member-name">Diego Sanchez</span>
+                            <span class="member-role">Undergraduate Researcher</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/karolina-k-8a7224169/" target="_blank"
+                            class="student-chip glass hover-lift">
+                            <span class="member-name">Karolina Krowal</span>
+                            <span class="member-role">NSF REU Student</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/evanjmarkowitz/" target="_blank"
+                            class="student-chip glass hover-lift">
+                            <span class="member-name">Evan Markowitz</span>
+                            <span class="member-role">Undergraduate Researcher</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer glass">
+        <div class="container footer-content text-center">
+            <a href="#" class="logo mb-4 inline-block">
+                <span class="logo-text">The<span class="gradient-text">Perry</span>Group</span>
+            </a>
+            <p class="text-dim text-sm mb-6 max-w-xl mx-auto">
+                Department of Physics & Center for Solar-Terrestrial Research<br>
+                New Jersey Institute of Technology, Newark, NJ
+            </p>
+            <div class="footer-bottom pt-6 border-t border-glass">
+                <p class="text-dim text-xs">
+                    &copy; 2026 The Perry Group. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
