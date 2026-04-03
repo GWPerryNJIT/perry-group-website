@@ -112,17 +112,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 doiUrl = doi['external-id-url']?.value || `https://doi.org/${doi['external-id-value']}`;
             }
 
+            // Create container card
             const card = document.createElement('div');
             card.className = `pub-card fade-in`;
             card.style.animationDelay = `${index * 0.1}s`;
-            
-            const venueText = journal !== 'Journal/Venue Not Listed' ? `${journal} &bull; ${year}` : `${year}`;
-            
-            card.innerHTML = `
-                <a href="${doiUrl}" target="_blank" class="pub-title">${title}</a>
-                <div class="pub-venue">${venueText}</div>
-                <div class="badge glass" style="align-self: flex-start; margin-top: 0.5rem; font-size: 0.7rem; padding: 0.2rem 0.6rem; text-transform: capitalize;">${type}</div>
-            `;
+
+            // Create title link
+            const titleLink = document.createElement('a');
+            titleLink.href = doiUrl;
+            titleLink.target = '_blank';
+            titleLink.rel = 'noopener noreferrer';
+            titleLink.className = 'pub-title';
+            titleLink.textContent = title;
+
+            // Create venue/year text
+            const venueDiv = document.createElement('div');
+            venueDiv.className = 'pub-venue';
+            venueDiv.textContent = journal !== 'Journal/Venue Not Listed' ? `${journal} • ${year}` : `${year}`;
+
+            // Create type badge
+            const badge = document.createElement('div');
+            badge.className = 'badge glass';
+            badge.style.cssText = 'align-self: flex-start; margin-top: 0.5rem; font-size: 0.7rem; padding: 0.2rem 0.6rem; text-transform: capitalize;';
+            badge.textContent = type;
+
+            // Assemble the card
+            card.appendChild(titleLink);
+            card.appendChild(venueDiv);
+            card.appendChild(badge);
             
             pubGrid.appendChild(card);
             
